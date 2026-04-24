@@ -22,6 +22,7 @@ Prérequis
 ------------
 
 -  [docker](https://www.docker.com/)
+-  [Une Clé API OpenWeatherMap](https://openweathermap.org/)
 
 Installation
 ----------
@@ -32,6 +33,7 @@ si utilisation de VsCode, réouvrir le projet dans le container via l'extension.
 sinon récupérer le nom du container avec `docker ps`  
 accéder au terminal du container `docker exec -it {nom-du-container} bash`  
 Éxécuter `composer install`  
+Créer un fichier `.env.local` et mettez-y vôtre clé api OpenWeatherMap en respectant le modèle présent dans `.env`
 
 Lancer les tests et la validation du code
 -----------------------------
