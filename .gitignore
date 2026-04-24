@@ -1,3 +1,8 @@
+/reports
+/junit.xml
+/clover.xml
+/.idea
+.DS_Store
 
 ###> symfony/framework-bundle ###
 /.env.local
