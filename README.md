@@ -18,6 +18,8 @@ Utilisation de `php-cs-fixer` et de `phpstan` pour la propreté du code
 
 Test unitaire réalisés avec `phpunit` 
 
+Création d'un workflow gitHub Action pour éxécuter les quality test automatiquement a chaque push ou pull_request
+
 Prérequis
 ------------
 
