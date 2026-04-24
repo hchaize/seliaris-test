@@ -1,0 +1,29 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Install PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: "8.5"
+                  coverage: xdebug
+
+            - name: Install dependencies
+              run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install --ignore-platform-reqs --prefer-dist --no-progress --no-interaction
+
+            - name: Run tests with coverage
+              run: composer test:coverage
+
+            - name: Run CS Fixer
+              run: composer cs:lint
+
+            - name: Run PHPStan
+              run: composer phpstan

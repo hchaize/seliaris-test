@@ -1,0 +1,23 @@
+{
+    "name": "Test Seliaris - Gateway",
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "test-seliaris-gateway",
+    "workspaceFolder": "/www",
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "junstyle.php-cs-fixer",
+                "mblode.twig-language-2",
+                "esbenp.prettier-vscode",
+                "xdebug.php-debug",
+                "ehedidracula.php-namespace-resolver",
+                "cvergne.vscode-php-getters-setters-cv",
+                "neilbrayfield.php-docblocker",
+                "dbaeumer.vscode-eslint",
+                "bradlc.vscode-tailwindcss"
+            ]
+        }
+    }
+}

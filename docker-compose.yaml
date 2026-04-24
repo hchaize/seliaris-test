@@ -1,0 +1,9 @@
+services:
+  test-seliaris-gateway:
+    build:
+      context: .
+      dockerfile: ./docker/gateway/Dockerfile
+    volumes:
+      - .:/www:delegated
+    ports:
+      - 8001:8000
